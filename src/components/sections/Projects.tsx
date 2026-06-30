@@ -73,17 +73,41 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
+function SeeMoreCard() {
+  const { t } = useLang();
+  const { ref, visible } = useReveal<HTMLDivElement>();
+
+  return (
+    <a
+      ref={ref as React.Ref<HTMLAnchorElement>}
+      href="https://github.com/ekateryna18?tab=repositories"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`proj-card proj-see-more reveal${visible ? ' visible' : ''}`}
+    >
+      <CornerBrackets />
+      <div className="see-more-inner">
+        <GithubIcon />
+        <span className="see-more-label">{t({ en: 'See all projects', fr: 'Voir tous les projets' })}</span>
+        <span className="see-more-arrow">→</span>
+      </div>
+    </a>
+  );
+}
+
 export default function Projects() {
   const { t } = useLang();
+  const featured = projects.filter(p => p.featured);
 
   return (
     <section id="projects" className="section section-alt">
       <div className="container">
         <SectionHead num="05." title={t({ en: 'Projects', fr: 'Projets' })} />
         <div className="proj-grid">
-          {projects.map((p, i) => (
+          {featured.map((p, i) => (
             <ProjectCard key={i} project={p} />
           ))}
+          <SeeMoreCard />
         </div>
       </div>
     </section>

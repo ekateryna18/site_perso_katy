@@ -664,6 +664,27 @@ body::before {
 .proj-link:hover { color: var(--pink); }
 .proj-soon  { border-style: dashed; opacity: .72; }
 .soon-badge { font-family: var(--mono); font-size: .72rem; padding: .28rem .72rem; background: rgba(0,240,255,.07); border: 1px solid rgba(0,240,255,.28); border-radius: 20px; color: var(--cyan); width: fit-content; }
+.proj-see-more {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  text-decoration: none;
+  color: var(--pink-l);
+  min-height: 180px;
+}
+.see-more-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  color: var(--muted);
+  transition: color .25s;
+}
+.proj-see-more:hover .see-more-inner { color: var(--pink-l); }
+.see-more-label { font-family: var(--mono); font-size: .92rem; font-weight: 600; }
+.see-more-arrow { font-size: 1.6rem; transition: transform .3s; line-height: 1; }
+.proj-see-more:hover .see-more-arrow { transform: translateX(6px); }
 
 /* =============================================
    CONTACT

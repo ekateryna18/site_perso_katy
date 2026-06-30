@@ -7,6 +7,7 @@ export interface Project {
   tags: string[];
   link: string;
   soon?: boolean;
+  featured?: boolean;
 }
 
 export const projects: Project[] = [
@@ -17,11 +18,35 @@ export const projects: Project[] = [
       en: 'A mobile app generating personalized daily schedules using AI. React Native frontend with a Python/Flask backend and MongoDB for data persistence.',
       fr: "Une application mobile générant des plannings quotidiens personnalisés via l'IA. Frontend React Native avec un backend Python/Flask et MongoDB.",
     },
-    tags: ['React', 'Expo', 'TypeScript', 'Python', 'Flask', 'MongoDB'],
+    tags: ['React Native', 'Expo', 'TypeScript', 'Python', 'Flask', 'MongoDB'],
     link: 'https://github.com/ekateryna18',
+    featured: true,
   },
   {
     num: '02',
+    title: { en: 'Oh My Matcha!', fr: 'Oh My Matcha !' },
+    desc: {
+      en: 'Full-stack GDPR-compliant tea shop with click-and-collect ordering. School challenge to implement 100% RGPD — cookie consent, loyalty system, full account erasure.',
+      fr: "Application click-and-collect pour boutique de thé, construite comme défi RGPD complet — consentement cookies, système de fidélité, effacement total des données.",
+    },
+    tags: ['React', 'TypeScript', 'NestJS', 'MongoDB', 'Docker', 'JWT'],
+    link: 'https://github.com/ekateryna18/oh-my-matcha',
+    featured: true,
+  },
+  {
+    num: '03',
+    title: { en: 'Flowlance', fr: 'Flowlance' },
+    desc: {
+      en: 'Self-hosted SaaS for French freelance devs — AI-generated project specs, automatic task breakdown, legally-compliant invoicing, and a secure client portal. RNCP project.',
+      fr: 'SaaS self-hosted pour développeurs freelances — CDC généré par IA, découpage automatique des tâches, facturation conforme au droit français et portail client sécurisé. Projet RNCP.',
+    },
+    tags: ['Next.js', 'TypeScript', 'SQLite', 'Drizzle', 'Auth.js', 'Docker'],
+    link: 'https://github.com/ekateryna18',
+    soon: true,
+    featured: true,
+  },
+  {
+    num: '04',
     title: { en: 'Flight Management App', fr: 'App Gestion de Vols' },
     desc: {
       en: 'Desktop flight management system with a JavaFX UI, PostgreSQL database, and REST services, implemented with Hibernate ORM and Spring architecture.',
@@ -29,26 +54,5 @@ export const projects: Project[] = [
     },
     tags: ['Java', 'JavaFX', 'PostgreSQL', 'Spring', 'Hibernate'],
     link: 'https://github.com/ekateryna18',
-  },
-  {
-    num: '03',
-    title: { en: 'Java Chat Application', fr: 'Application Chat Java' },
-    desc: {
-      en: 'Real-time chat application built with JavaFX and PostgreSQL, using a layered architecture for scalability and clean separation of concerns.',
-      fr: 'Application de chat en temps réel construite avec JavaFX et PostgreSQL, avec une architecture en couches pour la scalabilité.',
-    },
-    tags: ['Java', 'JavaFX', 'PostgreSQL'],
-    link: 'https://github.com/ekateryna18',
-  },
-  {
-    num: '04',
-    title: { en: 'More Coming Soon…', fr: "D'autres à venir…" },
-    desc: {
-      en: 'This space is reserved for upcoming projects. Check back soon!',
-      fr: 'Cet espace est réservé aux projets à venir. Revenez bientôt !',
-    },
-    tags: [],
-    link: '#',
-    soon: true,
   },
 ];
