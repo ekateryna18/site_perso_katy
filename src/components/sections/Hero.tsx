@@ -3,8 +3,8 @@ import { useLang } from '../../context/LangContext';
 import CornerBrackets from '../ui/CornerBrackets';
 
 const ROLES = {
-  en: ['Full-Stack Developer', "CS Master's Student", 'Problem Solver', 'API Architect', 'React Enthusiast'],
-  fr: ['Développeuse Full-Stack', 'Étudiante en Master', 'Solutionneuse', 'Architecte API', 'Passionnée React'],
+  en: ['DevSecOps', 'Security-First Builder', 'CI/CD & Docker', 'OWASP · RGPD · Cryptographie'],
+  fr: ['DevSecOps', 'Sécurité dès la conception', 'CI/CD & Docker', 'OWASP · RGPD · Cryptographie'],
 };
 
 const SPARKLES = [
@@ -112,8 +112,8 @@ export default function Hero() {
 
         <p className="hero-bio">
           {t({
-            en: "Full-stack developer & CS Master's student — building things that actually work.",
-            fr: "Développeuse full-stack & étudiante en Master — je crée des choses qui fonctionnent vraiment.",
+            en: 'DevSecOps — security baked in from the first commit.',
+            fr: 'DevSecOps — la sécurité intégrée dès le premier commit.',
           })}
         </p>
 

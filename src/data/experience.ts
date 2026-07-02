@@ -1,8 +1,10 @@
 import type { TText } from '../types';
 
 export interface Experience {
+  period: string;
   role: TText;
   company: string;
+  location: string;
   bullets: TText[];
   tags: string[];
 }
@@ -16,50 +18,35 @@ export interface Education {
 
 export const experiences: Experience[] = [
   {
-    role: { en: 'C# Developer Intern', fr: 'Développeuse C# Stagiaire' },
-    company: 'Accenture Industry X',
+    period: 'Déc. 2025 — présent',
+    role: { en: 'Full Stack Developer — Apprenticeship', fr: 'Développeuse Full Stack — Alternance' },
+    company: 'VNWeb',
+    location: 'Antibes, France',
     bullets: [
       {
-        en: 'Optimized existing C# code for improved performance and maintainability',
-        fr: 'Optimisation du code C# existant pour de meilleures performances et maintenabilité',
+        en: 'Developed new features for client projects, primarily with JavaScript, Node.js and Express',
+        fr: "Développement de nouvelles fonctionnalités pour les projets clients, principalement en JavaScript, Node.js et Express",
       },
       {
-        en: 'Migrated Windows Forms applications to modern WPF architecture',
-        fr: "Migration d'applications Windows Forms vers l'architecture WPF moderne",
+        en: 'Integrated and configured AWS services: Cognito (auth), S3 (storage), DynamoDB (NoSQL), Lambda (async processing), SES (transactional emails)',
+        fr: 'Intégration et configuration des services AWS : Cognito (authentification), S3 (stockage), DynamoDB (NoSQL), Lambda (traitements asynchrones), SES (emails transactionnels)',
       },
       {
-        en: 'Integrated Log4Net for structured application logging',
-        fr: 'Intégration de Log4Net pour une journalisation structurée',
+        en: 'Applied internal coding conventions and development best practices across all deliverables',
+        fr: "Application rigoureuse des conventions de codage et des bonnes pratiques de développement définies en interne",
       },
     ],
-    tags: ['C#', 'WPF', 'Log4Net'],
+    tags: ['JavaScript', 'Node.js', 'Express', 'AWS', 'DynamoDB', 'S3', 'Lambda'],
   },
   {
-    role: { en: 'SAP ABAP Developer Intern', fr: 'Développeuse SAP ABAP Stagiaire' },
-    company: 'MSG Systems',
-    bullets: [
-      {
-        en: 'Managed and optimized SAP database configurations',
-        fr: 'Gestion et optimisation des configurations de base de données SAP',
-      },
-      {
-        en: 'Developed with RAP (RESTful ABAP Programming Model)',
-        fr: "Développement avec le modèle de programmation RAP (RESTful ABAP)",
-      },
-      {
-        en: 'Worked in an Agile environment with cross-functional teams',
-        fr: "Travail en environnement Agile au sein d'équipes pluridisciplinaires",
-      },
-    ],
-    tags: ['SAP', 'ABAP', 'RAP', 'Agile'],
-  },
-  {
-    role: { en: 'Content Production Assistant', fr: 'Assistante Production de Contenu' },
+    period: '2025',
+    role: { en: 'Digital Content Production Assistant', fr: 'Assistante de Production de Contenu Numérique' },
     company: 'MDPI Publishing',
+    location: 'Cluj-Napoca, Romania',
     bullets: [
       {
-        en: 'Prepared and formatted academic documents for publication',
-        fr: 'Préparation et mise en forme de documents académiques pour publication',
+        en: 'Formatted and proofread academic documents according to editorial standards',
+        fr: 'Mise en forme et relecture de documents académiques selon les normes éditoriales',
       },
       {
         en: 'Processed documents using XML and Microsoft Word workflows',
@@ -68,19 +55,64 @@ export const experiences: Experience[] = [
     ],
     tags: ['XML', 'MS Word'],
   },
+  {
+    period: '2024',
+    role: { en: 'SAP ABAP Developer Intern', fr: 'Développeuse SAP ABAP Stagiaire' },
+    company: 'MSG Systems',
+    location: 'Cluj-Napoca, Romania',
+    bullets: [
+      {
+        en: 'Built a hotel reservation management client project end-to-end',
+        fr: "Réalisation d'un projet client de gestion des réservations hôtelières de bout en bout",
+      },
+      {
+        en: 'Developed with RAP (RESTful ABAP Programming Model) and managed SAP database configurations',
+        fr: "Développement avec le modèle RAP (RESTful ABAP Programming Model) et gestion des configurations de base de données SAP",
+      },
+      {
+        en: 'Worked in an Agile environment — project coordination, functional testing, cross-team communication',
+        fr: "Travail en environnement Agile — coordination de projet, tests fonctionnels, communication inter-équipes",
+      },
+    ],
+    tags: ['SAP ABAP', 'RAP', 'ABAP Objects', 'Jira', 'Agile'],
+  },
+  {
+    period: '2023',
+    role: { en: 'C# Developer Intern', fr: 'Développeuse C# Stagiaire' },
+    company: 'Accenture Industry X',
+    location: 'Cluj-Napoca, Romania',
+    bullets: [
+      {
+        en: 'Migrated a Windows Forms UI to WPF and improved overall code quality',
+        fr: "Migration d'une interface Windows Forms vers WPF et amélioration de la qualité du code",
+      },
+      {
+        en: 'Worked autonomously on the full migration scope with full technical documentation',
+        fr: "Travail en autonomie sur l'ensemble du périmètre de migration avec documentation technique complète",
+      },
+      {
+        en: 'Integrated Apache Log4Net for structured application logging',
+        fr: "Intégration d'Apache Log4Net pour une journalisation structurée de l'application",
+      },
+    ],
+    tags: ['C#', 'WPF', 'Windows Forms', 'POO', 'Log4Net'],
+  },
 ];
 
 export const education: Education[] = [
   {
     period: '2025 — 2027',
-    degree: { en: 'MBA Full Stack Development', fr: 'MBA Développement Full Stack' },
-    school: 'AcadeNice — Nice, France',
-    level: 'Bac+5',
+    degree: {
+      en: 'Expert in Security of Software Development (ESDI)',
+      fr: 'Expert(e) en Sécurité des Développements Informatiques (ESDI)',
+    },
+    school: 'AcadéNice — Nice, France',
+    level: 'Niv. 7 — RNCP37173',
   },
   {
     period: '2021 — 2024',
     degree: { en: "Bachelor's in Computer Science", fr: 'Licence en Informatique' },
-    school: 'Babeș-Bolyai University — Cluj Napoca, Romania',
+    school: 'Babeș-Bolyai University — Cluj-Napoca, Romania',
     level: 'Bac+3',
   },
 ];

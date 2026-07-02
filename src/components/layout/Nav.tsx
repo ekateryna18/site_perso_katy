@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { useLang } from '../../context/LangContext';
 
 const NAV_LINKS = [
-  { href: '#about',      en: 'About',      fr: 'À propos'     },
-  { href: '#skills',     en: 'Skills',     fr: 'Compétences'  },
-  { href: '#experience', en: 'Experience', fr: 'Expérience'   },
-  { href: '#projects',   en: 'Projects',   fr: 'Projets'      },
-  { href: '#contact',    en: 'Contact',    fr: 'Contact'      },
+  { href: '#about',      en: 'About',      fr: 'À propos'    },
+  { href: '#formation',  en: 'Education',  fr: 'Formation'   },
+  { href: '#skills',     en: 'Skills',     fr: 'Compétences' },
+  { href: '#experience', en: 'Experience', fr: 'Expérience'  },
+  { href: '#projects',   en: 'Projects',   fr: 'Projets'     },
+  { href: '#contact',    en: 'Contact',    fr: 'Contact'     },
 ];
 
 export default function Nav() {

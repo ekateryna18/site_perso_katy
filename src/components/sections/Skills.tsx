@@ -2,8 +2,8 @@ import { useLang } from '../../context/LangContext';
 import { useReveal } from '../../hooks/useReveal';
 import SectionHead from '../ui/SectionHead';
 import CornerBrackets from '../ui/CornerBrackets';
-import { skills } from '../../data/skills';
-import type { SkillCategory } from '../../data/skills';
+import { skillGroups } from '../../data/skills';
+import type { SkillCategory, SkillGroup } from '../../data/skills';
 
 function SkillCategoryCard({ category, delay }: { category: SkillCategory; delay: number }) {
   const { t } = useLang();
@@ -29,16 +29,38 @@ function SkillCategoryCard({ category, delay }: { category: SkillCategory; delay
   );
 }
 
+function SkillGroupBlock({ group }: { group: SkillGroup }) {
+  const { t } = useLang();
+  const { ref, visible } = useReveal<HTMLDivElement>();
+
+  return (
+    <div className="skill-group">
+      <div ref={ref} className={`skill-group-head reveal${visible ? ' visible' : ''}`}>
+        <div className="skill-group-accent" />
+        <div>
+          <div className="skill-group-name">{t(group.label)}</div>
+          <div className="skill-group-sublabel">{group.sublabel}</div>
+        </div>
+      </div>
+      <div className="skills-grid">
+        {group.categories.map((cat, i) => (
+          <SkillCategoryCard key={i} category={cat} delay={i * 80} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Skills() {
   const { t } = useLang();
 
   return (
     <section id="skills" className="section section-alt">
       <div className="container">
-        <SectionHead num="02." title={t({ en: 'Skills', fr: 'Compétences' })} />
-        <div className="skills-grid">
-          {skills.map((cat, i) => (
-            <SkillCategoryCard key={i} category={cat} delay={i * 100} />
+        <SectionHead num="03." title={t({ en: 'Skills', fr: 'Compétences' })} />
+        <div className="skill-groups">
+          {skillGroups.map((group, i) => (
+            <SkillGroupBlock key={i} group={group} />
           ))}
         </div>
       </div>

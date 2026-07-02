@@ -507,6 +507,35 @@ body::before {
 /* =============================================
    SKILLS
    ============================================= */
+.skill-groups  { display: flex; flex-direction: column; gap: 2.8rem; }
+.skill-group   { }
+.skill-group-head {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  margin-bottom: 1.4rem;
+}
+.skill-group-accent {
+  width: 3px;
+  height: 2.2rem;
+  background: linear-gradient(180deg, var(--pink), var(--purple));
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.skill-group-name {
+  font-family: var(--mono);
+  font-size: .84rem;
+  font-weight: 600;
+  color: var(--pink-l);
+  letter-spacing: .04em;
+}
+.skill-group-sublabel {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--dim);
+  margin-top: .18rem;
+  letter-spacing: .06em;
+}
 .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
 .skill-cat {
   background: var(--bg-card);
@@ -582,9 +611,12 @@ body::before {
   transition: all .3s;
 }
 .t-card:hover { border-color: var(--border-h); box-shadow: 0 0 24px rgba(255,0,119,.07); transform: translateX(6px); }
-.t-header { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: .9rem; }
-.t-role    { font-size: 1.02rem; font-weight: 600; }
-.t-company { font-family: var(--mono); font-size: .76rem; color: var(--pink); border: 1px solid var(--border); padding: .18rem .65rem; border-radius: 4px; }
+.t-header   { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: .45rem; }
+.t-role     { font-size: 1.02rem; font-weight: 600; }
+.t-company  { font-family: var(--mono); font-size: .76rem; color: var(--pink); border: 1px solid var(--border); padding: .18rem .65rem; border-radius: 4px; }
+.t-meta     { display: flex; align-items: center; gap: 1rem; margin-bottom: .8rem; }
+.t-period   { font-family: var(--mono); font-size: .72rem; color: var(--pink); }
+.t-location { font-family: var(--mono); font-size: .72rem; color: var(--dim); }
 .t-bullets { margin-bottom: .9rem; }
 .t-bullets li { font-size: .88rem; color: var(--muted); padding: .22rem 0 .22rem 1.1rem; position: relative; }
 .t-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--pink); font-size: .68rem; top: .38rem; }

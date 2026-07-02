@@ -1,0 +1,221 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ecaterina Munteanu",
+    "label": "DevSecOps · Alternante ESDI (Bac+5) · Niv. 7 RNCP",
+    "email": "ecaterinamunteanu18@gmail.com",
+    "phone": "06 72 42 35 97",
+    "url": "https://ecaterina-munteanu-portofolio.netlify.app",
+    "summary": "Développeuse en alternance spécialisée en sécurité des développements informatiques (ESDI, Niv. 7 — équivalent Bac+5). Passionnée par la sécurité applicative, le DevSecOps et la conception de solutions robustes. Solide expérience full stack (JavaScript, Node.js, AWS) et background en SAP ABAP et C#.",
+    "location": {
+      "city": "Grasse",
+      "postalCode": "06520",
+      "countryCode": "FR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "ekateryna18",
+        "url": "https://github.com/ekateryna18"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Ecaterina Munteanu",
+        "url": "https://www.linkedin.com/in/ecaterina-munteanu"
+      },
+      {
+        "network": "Portfolio",
+        "username": "ecaterina-munteanu-portofolio",
+        "url": "https://ecaterina-munteanu-portofolio.netlify.app"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "VNWeb",
+      "position": "Développeuse Full Stack — Alternance",
+      "location": "Antibes, France",
+      "startDate": "2025-12",
+      "highlights": [
+        "Développement de nouvelles fonctionnalités pour des projets clients en JavaScript, Node.js et Express",
+        "Intégration et configuration de services AWS : Cognito (authentification), S3 (stockage), DynamoDB (NoSQL), Lambda (traitements asynchrones), SES (emails transactionnels)",
+        "Application rigoureuse des conventions de codage internes et des bonnes pratiques de développement sur l'ensemble des livrables"
+      ],
+      "keywords": ["JavaScript", "Node.js", "Express", "AWS", "DynamoDB", "S3", "Lambda", "Cognito", "SES"]
+    },
+    {
+      "name": "MDPI Publishing",
+      "position": "Assistante de Production de Contenu Numérique",
+      "location": "Cluj-Napoca, Romania",
+      "startDate": "2025-01",
+      "endDate": "2025-06",
+      "highlights": [
+        "Mise en forme et relecture de documents académiques selon les normes éditoriales internationales",
+        "Traitement de documents via des workflows XML et Microsoft Word avec rigueur et sens du détail"
+      ],
+      "keywords": ["XML", "Microsoft Word", "Édition numérique"]
+    },
+    {
+      "name": "MSG Systems",
+      "position": "Développeuse SAP ABAP — Stage",
+      "location": "Cluj-Napoca, Romania",
+      "startDate": "2024-02",
+      "endDate": "2024-06",
+      "highlights": [
+        "Réalisation d'un projet client de gestion des réservations hôtelières de bout en bout",
+        "Développement avec le modèle RAP (RESTful ABAP Programming Model) et gestion des configurations de base de données SAP",
+        "Environnement Agile : coordination de projet, tests fonctionnels, communication inter-équipes"
+      ],
+      "keywords": ["SAP ABAP", "RAP", "ABAP Objects", "Jira", "Agile", "Gestion de projet"]
+    },
+    {
+      "name": "Accenture Industry X",
+      "position": "Développeuse C# — Stage",
+      "location": "Cluj-Napoca, Romania",
+      "startDate": "2023-06",
+      "endDate": "2023-09",
+      "highlights": [
+        "Migration d'une interface utilisateur Windows Forms vers WPF avec amélioration significative de la qualité du code",
+        "Travail en autonomie complète sur l'ensemble du périmètre de migration, avec documentation technique exhaustive",
+        "Intégration d'Apache Log4Net pour une journalisation structurée et traçabilité applicative"
+      ],
+      "keywords": ["C#", "WPF", "Windows Forms", "POO", "Log4Net", "Documentation technique"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "AcadéNice",
+      "area": "Sécurité des Développements Informatiques",
+      "studyType": "Expert(e) en Sécurité des Développements Informatiques (ESDI) — Bac+5 (équivalent Master, 5 ans après le bac)",
+      "startDate": "2025",
+      "endDate": "2027",
+      "score": "Niv. 7 — RNCP37173",
+      "courses": [
+        "Sécurité applicative & DevSecOps",
+        "Cryptographie & gestion des identités",
+        "RGPD, audit & conformité (CNIL)",
+        "Cloud Computing & CI/CD",
+        "Management technique & gestion de projet"
+      ]
+    },
+    {
+      "institution": "Université Babeș-Bolyai",
+      "area": "Informatique",
+      "studyType": "Licence en Informatique — Bac+3",
+      "startDate": "2021",
+      "endDate": "2024",
+      "courses": [
+        "Algorithmique, POO, Java, C++",
+        "SQL, PostgreSQL, TCP/IP, modèle OSI",
+        "Développement Web & mobile",
+        "Introduction à l'IA"
+      ]
+    },
+    {
+      "institution": "Université de Cambridge",
+      "area": "Anglais",
+      "studyType": "Certificate in Advanced English (CAE) — Niveau C1",
+      "startDate": "2020",
+      "endDate": "2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Avancé",
+      "keywords": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind", "Expo", "React Native"]
+    },
+    {
+      "name": "Backend",
+      "level": "Avancé",
+      "keywords": ["Node.js", "Express", "NestJS", "Python", "Flask", "Java", "Spring Boot", "Hibernate", "C#", "SAP ABAP"]
+    },
+    {
+      "name": "Bases de données",
+      "level": "Intermédiaire",
+      "keywords": ["PostgreSQL", "MongoDB", "SQLite", "DynamoDB", "SQL"]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "level": "Intermédiaire",
+      "keywords": ["AWS", "S3", "Lambda", "Cognito", "SES", "Docker", "Scaleway", "Traefik", "Litestream"]
+    },
+    {
+      "name": "Sécurité applicative",
+      "level": "Intermédiaire",
+      "keywords": ["OWASP Top 10", "Burp Suite", "Pentesting", "SAST", "DAST", "AES-256-GCM", "Argon2id", "JWT", "httpOnly cookies"]
+    },
+    {
+      "name": "DevSecOps",
+      "level": "Intermédiaire",
+      "keywords": ["CI/CD", "GitHub Actions", "Gitleaks", "Semgrep", "CodeQL", "OWASP ZAP", "Grafana", "Loki", "Promtail"]
+    },
+    {
+      "name": "RGPD & Conformité",
+      "level": "Intermédiaire",
+      "keywords": ["Privacy by Design", "CNIL", "Plan d'audit", "Plan de sécurisation"]
+    },
+    {
+      "name": "Gestion de projet & Outils",
+      "level": "Intermédiaire",
+      "keywords": ["Agile", "Kanban", "Jira", "GitHub Projects", "Git", "Linux"]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "",
+      "keywords": [
+        "Gestion de projet",
+        "Esprit d'équipe & leadership",
+        "Autonomie & adaptabilité",
+        "Rigueur & sens du détail",
+        "Gestion du temps & des priorités",
+        "Communication inter-équipes",
+        "Proactivité & curiosité technologique",
+        "Résolution de problèmes",
+        "Optimisme & motivation",
+        "Veille technologique"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Roumain",
+      "fluency": "Langue maternelle"
+    },
+    {
+      "language": "Français",
+      "fluency": "Expert (C2)"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Bilingue (C1 — CAE Cambridge)"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Randonnée",
+      "keywords": ["endurance", "persévérance", "dépassement de soi"]
+    },
+    {
+      "name": "Arts & crafts",
+      "keywords": ["créativité", "minutie", "attention aux détails"]
+    },
+    {
+      "name": "Photographie",
+      "keywords": ["composition", "observation", "esthétique"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Agenda — Planification intelligente de tâches",
+      "description": "Application mobile de planification automatique des tâches quotidiennes via un algorithme génétique IA",
+      "highlights": [
+        "Backend : Python, Flask, MongoDB, algorithme génétique IA",
+        "Frontend : React Native, Expo, TypeScript, JavaScript",
+        "Architecture full stack autonome : documentation, code propre, bonnes pratiques"
+      ],
+      "keywords": ["Python", "Flask", "MongoDB", "React Native", "Expo", "TypeScript", "IA", "Algorithme génétique"],
+      "url": "https://github.com/ekateryna18"
+    }
+  ]
+}
